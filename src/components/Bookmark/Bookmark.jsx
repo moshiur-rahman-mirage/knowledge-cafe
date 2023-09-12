@@ -5,7 +5,6 @@ const Bookmark = ({bookmark}) => {
     return (
         <div>
             <h1> {title}</h1>
-            Hello
         </div>
     );
 };
