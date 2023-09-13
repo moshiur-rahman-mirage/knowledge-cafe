@@ -6,19 +6,22 @@ import Bookmarks from './components/Bookmarks/Bookmarks'
 import Header from './components/header/Header'
 function App() {
 
-  const [bookmarks,setBookMarks]=useState([])
-  const [readingTime ,setReadingTime]=useState(0)
+  const [bookmarks,setBookMarks]=useState([]);
+  const [readingTime ,setReadingTime]=useState(0);
   // console.log(readingTime)
   const handleAddToBookmarks = blog=>{
     const newBookMarks=[...bookmarks,blog];
     setBookMarks(newBookMarks);
-    // console.log(bookmarks)
   }
 
   const handleMarkAsRead=(id,time)=>{
-    const newTime=readingTime+time;
-    setReadingTime(newTime);
-     console.log(readingTime)
+     const newTime=readingTime+time;
+     setReadingTime(newTime);
+    //  console.log(readingTime)
+    // console.log('ireading time called')
+    // console.log(id)
+    // console.log(time)
+    console.log('reading time is '+readingTime)
   }
 // console.log(readingTime)
   return (
